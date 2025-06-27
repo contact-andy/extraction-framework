@@ -1,0 +1,796 @@
+<?xml version='1.0' encoding='UTF-8'?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/"><page><title>Mapping am:መረጃሳጥን ሰው</title><ns>390</ns><id>14443</id><revision><id>59705</id><timestamp>2024-07-12T21:49:59Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Person
+                 | mappings =
+                {{PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:name}}
+                {{PropertyMapping | templateProperty =  ቅጽል_ስም | ontologyProperty = foaf:nick}}
+                {{PropertyMapping | templateProperty =  ስዕል | ontologyProperty = picture}}
+                {{PropertyMapping | templateProperty =  የስዕል_ስፋት | ontologyProperty = pictureSize}}
+                {{PropertyMapping | templateProperty =  የስዕል_መግለጫ | ontologyProperty = pictureDescription}}
+                {{PropertyMapping | templateProperty =  ማዕረግ | ontologyProperty = title}}
+                {{PropertyMapping | templateProperty =  የትዳር_አጋር | ontologyProperty = spouse}}
+                {{PropertyMapping | templateProperty =  ልጆች | ontologyProperty = child}}
+                {{PropertyMapping | templateProperty =  ሙሉ_ስም | ontologyProperty = foaf:name}}
+                {{PropertyMapping | templateProperty =  አባት | ontologyProperty = father}}
+                {{PropertyMapping | templateProperty =  እናት | ontologyProperty = mother}}
+                {{PropertyMapping | templateProperty =  የትውልድ_ቦታ | ontologyProperty = birthPlace}}
+                {{PropertyMapping | templateProperty =  የልደት_ቀን | ontologyProperty = birthDate}}
+                {{PropertyMapping | templateProperty =  የሞት_ቀን | ontologyProperty = deathDate}}
+                {{PropertyMapping | templateProperty =  የሞት_ቦታ | ontologyProperty = deathPlace}}
+                {{PropertyMapping | templateProperty =  ሀይማኖት | ontologyProperty = religion}}
+                {{PropertyMapping | templateProperty =  ሽልማት | ontologyProperty = award}}
+                {{PropertyMapping | templateProperty =  ፊርማ | ontologyProperty = signature}}
+                {{PropertyMapping | templateProperty =  ሙያ | ontologyProperty = profession}}
+}}</text></revision></page><page><title>Mapping am:መረጃሳጥን ተራራ</title><ns>390</ns><id>14461</id><revision><id>59766</id><timestamp>2024-08-05T07:08:26Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Mountain
+                 | mappings =
+                {{ PropertyMapping | templateProperty =    ስም  | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =    ፎቶ  | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =    የሰዕል_መግለጫ  | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =    ከፍታ  | ontologyProperty = elevation |unit = metre }}
+                {{ PropertyMapping | templateProperty =    ቦታ  | ontologyProperty = locatedInArea }}
+                {{ PropertyMapping | templateProperty =    የተራሮች_ሰንሰለት_ስም  | ontologyProperty = mountainRange }}
+                {{ PropertyMapping | templateProperty =    የጄዮግራፊ_አቀማመጥ  | ontologyProperty = position }}
+                {{ PropertyMapping | templateProperty =    የቶፖግራፊ_ካርታ  | ontologyProperty = map }}
+                {{ PropertyMapping | templateProperty =    ዓይነት  | ontologyProperty = type }}
+                {{ PropertyMapping | templateProperty =    የድንጋይ_ዕድሜ  | ontologyProperty = age }}
+                {{ PropertyMapping | templateProperty =    የመጨረሻ_ፍንዳታ  | ontologyProperty = eruptionYear }}
+                {{ PropertyMapping | templateProperty =    ለመጀመሪያ_ጊዜ_የወጣው_ሰው  | ontologyProperty = firstAscent }}
+                {{ PropertyMapping | templateProperty =    ቀላል_መውጫ_መስመር  | ontologyProperty = route }}
+                {{ PropertyMapping | templateProperty =    ትርጉም  | ontologyProperty = meaning }}
+                {{ PropertyMapping | templateProperty =    ቋንቋ  | ontologyProperty = language }}
+                {{ PropertyMapping | templateProperty =    አጠራር  | ontologyProperty = pronunciation }}
+
+
+
+                &lt;!-- Properties not mapped yet
+                {{ PropertyMapping | templateProperty =    ዝርዝር  | ontologyProperty =  }}
+                {{ PropertyMapping | templateProperty =    OS_ሰንጠረዥ_ጠቋሚ  | ontologyProperty =  }}
+                {{ PropertyMapping | templateProperty =    OSI/OSNI_ሰንጠረዥ_ጠቋሚ  | ontologyProperty = }} -->
+}}</text></revision></page><page><title>Mapping am:መረጃሳጥን ካውንቲ መረጃ</title><ns>390</ns><id>14458</id><revision><id>59756</id><timestamp>2024-07-28T23:48:17Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = AdministrativeRegion
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ካውንቲ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስቴት | ontologyProperty = state }}
+                {{ PropertyMapping | templateProperty =  ማኍተም_ሥዕል | ontologyProperty = image }}
+                {{ PropertyMapping | templateProperty =  ካርታ_ሥዕል | ontologyProperty = map }}
+                {{ PropertyMapping | templateProperty =  ተመሰረተ | ontologyProperty = foundingDate }}
+                {{ PropertyMapping | templateProperty =  ካውንቲ_መቀመጫ | ontologyProperty = countySeat }}
+                {{ PropertyMapping | templateProperty =  ካውንቲ_መሬት_ስፋት | ontologyProperty = landArea | unit = squareKilometre }}
+                {{ PropertyMapping | templateProperty =  ካውንቲ_ውሃ_ስፋት | ontologyProperty = waterArea }}
+                {{ PropertyMapping | templateProperty =  ሕዝብ_ብዛት_ዓመት | ontologyProperty = censusYear }}
+                {{ PropertyMapping | templateProperty =  ሕዝብ_ብዛት | ontologyProperty = populationDensity | unit = inhabitantsPerSquareKilometre }}
+                {{ PropertyMapping | templateProperty =  ድረ_ገጽ | ontologyProperty = foaf:homepage }}}}</text></revision></page><page><title>Mapping am:መረጃሳጥን የሙዚቀኛ መረጃ</title><ns>390</ns><id>14453</id><revision><id>59747</id><timestamp>2024-07-28T22:37:13Z</timestamp><text>{{ConditionalMapping
+| cases =
+ {{Condition
+    | templateProperty = ዓይነት
+    | operator = contains
+    | value = ድምጻዊ
+    | mapping = {{TemplateMapping
+                | mapToClass = Singer
+                | header = 0
+                }}
+ }}
+ {{Condition
+    | templateProperty = ዓይነት
+    | operator = contains
+    | value = ባንድ
+    | mapping = {{TemplateMapping
+                | mapToClass = Band
+                | header = 0
+                }}
+ }}
+ {{Condition
+    | templateProperty = ዓይነት
+    | operator = contains
+    | value = መሳሪያ ባለሙያ
+    | mapping = {{TemplateMapping
+                | mapToClass = Instrumentalist
+                | header = 0
+                }}
+ }}
+
+{{Condition
+    | operator = otherwise
+    | mapping = {{TemplateMapping
+                | mapToClass = MusicalArtist
+                | header = 0
+                }}
+ }}
+
+| defaultMappings =
+                {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:nick }}
+                {{ PropertyMapping | templateProperty =  ሽፋን | ontologyProperty = image }}
+                {{ PropertyMapping | templateProperty =  የሽፋን_መግለጫ | ontologyProperty = pictureDescription}}
+                {{ PropertyMapping | templateProperty =  የትውልድ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  የልደት_ቀን | ontologyProperty = birthDate }}
+                {{ PropertyMapping | templateProperty =  የትውልድ_ቦታ | ontologyProperty = birthPlace }}
+                {{ PropertyMapping | templateProperty =  የሞት_ቀን | ontologyProperty = deathDate }}
+                {{ PropertyMapping | templateProperty =  የሞት_ቦታ | ontologyProperty = deathPlace }}
+				{{DateIntervalMapping
+					| templateProperty          = የሥራ_ዘመን
+					| startDateOntologyProperty = activeYearsStartYear
+					| endDateOntologyProperty   = activeYearsEndYear
+        		}}
+                {{ PropertyMapping | templateProperty =  አሳታሚ | ontologyProperty = productionCompany }}}}</text></revision></page><page><title>Mapping am:መረጃሳጥን የቋንቋ መረጃ</title><ns>390</ns><id>14451</id><revision><id>59744</id><timestamp>2024-07-28T21:36:49Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Language
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ስም_በአማርኛ | ontologyProperty = foaf:name | language = am}}
+                {{ PropertyMapping | templateProperty =  ስም_በቋንቋው | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስዕል | ontologyProperty = image }}
+                {{ PropertyMapping | templateProperty =  መግለጫ | ontologyProperty = description }}
+                {{ PropertyMapping | templateProperty =  አጠራር | ontologyProperty = pronunciation }}
+                {{ PropertyMapping | templateProperty =  የሚነገርበት_ቦታ | ontologyProperty = spokenIn }}
+                {{ PropertyMapping | templateProperty =  የተናጋሪዎች_ቁጥር | ontologyProperty = numberOfSpeakers }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ1 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ2 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ3 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ4 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ5 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ6 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ7 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ8 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ9 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ10 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ11 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ12 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ13 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ14 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  ቤተሰብ15 | ontologyProperty = languageFamily }}
+                {{ PropertyMapping | templateProperty =  የሚጻፈው | ontologyProperty = alphabet }}
+                {{ PropertyMapping | templateProperty =  ካርታ | ontologyProperty = map }}
+				{{ PropertyMapping | templateProperty =  ዘዬ | ontologyProperty = dialect }}
+				{{ PropertyMapping | templateProperty =  የቋንቋ_ኮድ | ontologyProperty = languageCode }}
+}}</text></revision></page><page><title>Mapping am:መረጃሳጥን የአልበም መረጃ</title><ns>390</ns><id>14454</id><revision><id>59749</id><timestamp>2024-07-28T22:41:22Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Album
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  አልበም_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  አልበም_ሽፋን | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =  የሽፋን_ስፋት | ontologyProperty = pictureSize }}
+                {{ PropertyMapping | templateProperty =  የሽፋን_መግለጫ | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =  ድምጻዊ_ስም | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  የተለቀቀበት_ቀን | ontologyProperty = releaseDate }}
+                {{ PropertyMapping | templateProperty =  የተቀዳበት_ቀን | ontologyProperty = recordDate }}
+                {{ PropertyMapping | templateProperty =  ስልት | ontologyProperty = genre }}
+                {{ PropertyMapping | templateProperty =  ርዝመት | ontologyProperty = albumRuntime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  ቋንቋ | ontologyProperty = language }}
+				{{ PropertyMapping | templateProperty =  የትራኮች_ብዛት | ontologyProperty = totalTracks }} 
+                {{ PropertyMapping | templateProperty =  አሳታሚ | ontologyProperty = productionCompany }}
+				
+
+&lt;!-- properties not mapped yet
+                {{ PropertyMapping | templateProperty =  ዓይነት | ontologyProperty = ####### }} -->
+}}</text></revision></page><page><title>Mapping am:መረጃሳጥን የአሜሪካ ስቴት</title><ns>390</ns><id>14462</id><revision><id>59770</id><timestamp>2024-08-05T07:51:59Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = State
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ስቴት_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ባንዲራ | ontologyProperty = flag }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ማኅተም | ontologyProperty = logo }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ካርታ | ontologyProperty = map }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ዋና_ከተማ | ontologyProperty = capital }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ትልቋ_ከተማ | ontologyProperty = biggestCity }}
+
+{{IntermediateNodeMapping
+        | nodeClass = PoliticalFunction
+        | correspondingProperty = politicalLeader
+        | mappings =
+           {{PropertyMapping | templateProperty = ስቴት_አገረ_ገዥ | ontologyProperty = governor }}
+        }} 
+
+ {{IntermediateNodeMapping
+        | nodeClass = Area
+        | correspondingProperty = wholeArea
+        | mappings =
+           {{PropertyMapping | templateProperty = ስቴት_መሬት_ስፋት | ontologyProperty = value }} 
+           {{PropertyMapping | templateProperty = ስቴት_መሬት_ስፋት_ከአገር | ontologyProperty = rank }}
+        }}
+
+         {{IntermediateNodeMapping
+        | nodeClass = Demographics
+        | correspondingProperty = demographics
+        | mappings =
+           {{PropertyMapping | templateProperty = ስቴት_ሕዝብ_ብዛት | ontologyProperty = populationTotal }} 
+           {{PropertyMapping | templateProperty = ስቴት_ሕዝብ_ብዛት_ከአገር| ontologyProperty = rank }}
+        }}
+
+
+                {{ PropertyMapping | templateProperty =  ስቴት_ሕብረት_ቀን | ontologyProperty = mergerDate }}
+
+                {{ GeocoordinatesMapping| latitude = ስቴት_ላቲቲዩድ | longitude = ስቴት_ሎንግቲዩድ }}
+
+                {{ PropertyMapping | templateProperty =  ስቴት_ከፍተኛ_ነጥብ | ontologyProperty = maximumElevation | unit = metre }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ዝቅተኛ_ነጥብ | ontologyProperty = minimumElevation | unit = metre }}
+                {{ PropertyMapping | templateProperty =  ስቴት_አማካኝ_ከፍታ | ontologyProperty = elevation | unit = metre  }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ምዕጻረ_ቃል | ontologyProperty = abbreviation }}
+                {{ PropertyMapping | templateProperty =  ስቴት_ድረ_ገጽ | ontologyProperty = foaf:homepage }}
+                }}</text></revision></page><page><title>Mapping am:መረጃሳጥን የወንዝ መረጃ</title><ns>390</ns><id>14452</id><revision><id>59746</id><timestamp>2024-07-28T22:31:15Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = River
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ተፋሰስ_ሀገራት | ontologyProperty = basinCountry }}
+                {{ PropertyMapping | templateProperty =  ርዝመት | ontologyProperty = length }}
+                {{ PropertyMapping | templateProperty =  የመነሻ_ከፍታ | ontologyProperty = sourceElevation }}
+                {{ PropertyMapping | templateProperty =  የመድረሻ_ከፍታ | ontologyProperty = mouthElevation }}
+                {{ PropertyMapping | templateProperty =  አማካኝ_ፍሳሽ_መጠን | ontologyProperty = dischargeAverage }}
+                {{ PropertyMapping | templateProperty =  መድረሻ | ontologyProperty = riverMouth }}
+                {{ PropertyMapping | templateProperty =  መነሻ | ontologyProperty = origin }}
+                {{ PropertyMapping | templateProperty =  የወንዝ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስዕል | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =  ሰዕል_መግለጫ_ጽሑፍ | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =  የተፋሰስ_አካባቢ_ስፋት | ontologyProperty = watershed | unit = squareKilometre }}
+				}}</text></revision></page><page><title>Mapping am:አቀማመጥ</title><ns>390</ns><id>14463</id><revision><id>59779</id><timestamp>2024-08-06T00:06:25Z</timestamp><text>{{TemplateMapping
+    | mapToClass = Place
+    | mappings =
+        {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:name }}
+        {{ PropertyMapping | templateProperty =  ሰሜን ምዕራብ  | ontologyProperty = northWestPlace }}
+        {{ PropertyMapping | templateProperty =  ሰሜን  | ontologyProperty = northPlace }}
+        {{ PropertyMapping | templateProperty =  ሰሜን ምስራቅ  | ontologyProperty = northEastPlace }}
+        {{ PropertyMapping | templateProperty =  ምስራቅ | ontologyProperty = eastPlace }}
+        {{ PropertyMapping | templateProperty =  ደቡብ ምስራቅ | ontologyProperty = southEastPlace }}
+        {{ PropertyMapping | templateProperty =  ደቡብ | ontologyProperty = southPlace }}
+        {{ PropertyMapping | templateProperty =  ደቡብ ምዕራብ | ontologyProperty = southWestPlace }}
+        {{ PropertyMapping | templateProperty =  ምዕራብ | ontologyProperty = westPlace }}
+    }}</text></revision></page><page><title>Mapping am:የሀገር መረጃ</title><ns>390</ns><id>14440</id><revision><id>59659</id><timestamp>2024-06-11T08:25:35Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Country
+                 | mappings =
+                {{PropertyMapping | templateProperty =  ስም  | ontologyProperty = foaf:name}}
+                {{PropertyMapping | templateProperty =  ሙሉ_ስም  | ontologyProperty = foaf:name}}
+                {{PropertyMapping | templateProperty =  ብሔራዊ_መዝሙር  | ontologyProperty = anthem}}
+                {{PropertyMapping | templateProperty =  ማኅተም_ሥዕል  | ontologyProperty = image}}
+                {{PropertyMapping | templateProperty =  ባንዲራ_ስፋት  | ontologyProperty = imageSize}}
+                {{PropertyMapping | templateProperty =  ባንዲራ_ሥዕል  | ontologyProperty = flag}}
+                {{PropertyMapping | templateProperty =  ካርታ_ሥዕል  | ontologyProperty = map}} 
+                {{PropertyMapping | templateProperty =  ዋና_ከተማ  | ontologyProperty = capital}}
+                {{PropertyMapping | templateProperty =  ብሔራዊ_ቋንቋ  | ontologyProperty = officialLanguage}}
+                {{PropertyMapping | templateProperty =  የመንግስት_ዓይነት  | ontologyProperty = governmentType}}
+
+{{IntermediateNodeMapping
+        | nodeClass = PoliticalFunction
+        | correspondingProperty = politicalLeader
+        | mappings =
+                {{PropertyMapping | templateProperty =  የመሪዎች_ማዕረግ  | ontologyProperty = leaderTitle}}
+                {{PropertyMapping | templateProperty =  የመሪዎች_ስም  | ontologyProperty = leaderName}}
+}}
+                {{PropertyMapping | templateProperty =  የመሬት_ስፋት  | ontologyProperty = areaTotal | unit = squareKilometre}}
+                {{PropertyMapping | templateProperty =  የመሬት_ስፋት_ከዓለም  | ontologyProperty = areaTotalRanking}}
+                {{PropertyMapping | templateProperty =  ውሀ_ከመቶ  | ontologyProperty = percentageOfAreaWater}}
+ {{IntermediateNodeMapping
+        | nodeClass = Demographics
+        | correspondingProperty = demographics
+        | mappings =
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ግምት_ዓመት  | ontologyProperty = censusYear}}
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ቆጠራ_ዓመት  | ontologyProperty = censusYear}}
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ግምት  | ontologyProperty = populationDensity | unit = inhabitantsPerSquareKilometre}}
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ቆጠራ  | ontologyProperty = populationDensity | unit = inhabitantsPerSquareKilometre}}
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ከዓለም  | ontologyProperty = populationTotalRanking}}
+                {{PropertyMapping | templateProperty =  የሕዝብ_ብዛት_ቆጠራ_ከዓለም  | ontologyProperty = populationTotalRanking}}
+
+}}
+                {{PropertyMapping | templateProperty =  የገንዘብ_ስም  | ontologyProperty = currency}}
+                {{PropertyMapping | templateProperty =  የምንዛሬ_ኮድ  | ontologyProperty = currencyCode}}
+                {{PropertyMapping | templateProperty =  ሰዓት_ክልል  | ontologyProperty = timeZone}}
+                {{PropertyMapping | templateProperty =  የስልክ_መግቢያ  | ontologyProperty = areaCode}}
+                {{PropertyMapping | templateProperty =  ከፍተኛ_ደረጃ_ዶሜን  | ontologyProperty = topLevelDomain}}
+                {{PropertyMapping | templateProperty =  የግርጌ_ማስታወሻ  | ontologyProperty = notes}}
+
+}}</text></revision></page><page><title>Mapping am:የቦታ መረጃ</title><ns>390</ns><id>14446</id><revision><id>59703</id><timestamp>2024-07-11T20:13:22Z</timestamp><text>{{TemplateMapping
+ | mapToClass = Place
+ | mappings =
+	{{ PropertyMapping | templateProperty =   ስም  | ontologyProperty = foaf:name | language=am  }}
+	{{ PropertyMapping | templateProperty =   ኗሪ_ስም  | ontologyProperty = foaf:name }}
+
+	{{ PropertyMapping | templateProperty =   ይፋ_ስም  | ontologyProperty = officialName }}
+	{{ PropertyMapping | templateProperty =   ስዕል  | ontologyProperty = image }}
+	{{ PropertyMapping | templateProperty =   ስዕል_መግለጫ  | ontologyProperty = thumbnailCaption }}
+	{{ PropertyMapping | templateProperty =   ባንዲራ  | ontologyProperty = flag }}
+	{{ PropertyMapping | templateProperty =   አርማ  | ontologyProperty = emblem }}
+
+				
+	{{IntermediateNodeMapping
+	| nodeClass = PoliticalFunction
+	| correspondingProperty = governingBody
+	| mappings =
+			{{PropertyMapping | templateProperty =  መሪ_ማዕረግ  | ontologyProperty = leaderTitle}}
+			{{PropertyMapping | templateProperty =  መሪ_ስም  | ontologyProperty = leaderName}}
+	}}
+	{{IntermediateNodeMapping
+	| nodeClass = PoliticalFunction
+	| correspondingProperty = governingBody
+	| mappings =
+			{{PropertyMapping | templateProperty =  መሪ_ማዕረግ2  | ontologyProperty = leaderTitle}}
+			{{PropertyMapping | templateProperty =  መሪ_ስም2  | ontologyProperty = leaderName}}
+	}}
+
+	{{IntermediateNodeMapping
+	| nodeClass = Area
+	| correspondingProperty =area
+	| mappings =
+			{{ PropertyMapping | templateProperty =   ቦታ_ጠቅላላ  | ontologyProperty = wholeArea | unit = squareKilometre}}
+			{{ PropertyMapping | templateProperty =   ቦታ_መሬት  | ontologyProperty = landArea | unit = squareKilometre}}
+			{{ PropertyMapping | templateProperty =   ቦታ_ውሃ  | ontologyProperty = waterArea }}
+				
+	}}
+	{{ PropertyMapping | templateProperty =   ከፍታ  | ontologyProperty = elevation }}
+	{{IntermediateNodeMapping 
+	| nodeClass = Demographics
+	| correspondingProperty = demographics 
+	| mappings =
+			{{ PropertyMapping | templateProperty =   ሕዝብ_ጠቅላላ  | ontologyProperty = populationTotal }}
+			{{ PropertyMapping | templateProperty =   ሕዝብ_ከተማ  | ontologyProperty = populationUrban }}
+			{{ PropertyMapping | templateProperty =   ሕዝብ_ገጠር  | ontologyProperty = populationRural }}
+	}}
+	{{ PropertyMapping | templateProperty =   ድረ_ገጽ  | ontologyProperty = foaf:homepage }}
+
+	{{GeocoordinatesMapping 
+		| latitudeDirection =  east_west | latitudeDegrees = lat_deg | latitudeMinutes = lat_min 
+		| longitudeDirection = north_south | longitudeDegrees = long_deg | longitudeMinutes = long_min  
+	}}
+
+
+	{{IntermediateNodeMapping 
+	| nodeClass = Settlement 
+	| correspondingProperty = settlement 
+	| mappings =
+			{{ PropertyMapping | templateProperty =   ምሥረታ_ስም  | ontologyProperty = originalName }}
+			{{ PropertyMapping | templateProperty =   ምሥረታ_ቀን  | ontologyProperty = foundingDate }}
+			{{ PropertyMapping | templateProperty =   ክፍፍል_ዓይነት  | ontologyProperty = type }}
+	}}
+
+	{{IntermediateNodeMapping 
+	| nodeClass = Settlement 
+	| correspondingProperty = settlement 
+	| mappings =
+			{{ PropertyMapping | templateProperty =   ምሥረታ_ስም2  | ontologyProperty = formerName }}
+			{{ PropertyMapping | templateProperty =   ምሥረታ_ቀን2  | ontologyProperty = foundingDate }}
+			{{ PropertyMapping | templateProperty =   ክፍፍል_ዓይነት2  | ontologyProperty = type }}
+	}}
+}}
+
+&lt;!--Properties not matched yet 
+{{ PropertyMapping | templateProperty =   ቦታ_ዓይነት  | ontologyProperty =  }}
+{{ PropertyMapping | templateProperty =   ክፍፍል_ስም  | ontologyProperty =  }}
+{{ PropertyMapping | templateProperty =   ክፍፍል_ስም2  | ontologyProperty = }}
+{{ PropertyMapping | templateProperty =   መቀመጫ_ዓይነት  | ontologyProperty =  }}
+{{ PropertyMapping | templateProperty =   መቀመጫ  | ontologyProperty = }}
+--></text></revision></page><page><title>Mapping am:የንጉሥ መረጃ</title><ns>390</ns><id>14456</id><revision><id>59751</id><timestamp>2024-07-28T23:15:05Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Royalty
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስዕል | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =  የስዕል_ስፋት | ontologyProperty = pictureSize }}
+                {{ PropertyMapping | templateProperty =  የስዕል_መግለጫ | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =  ርዕስ | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ግዛት | ontologyProperty = realm }}
+                {{ PropertyMapping | templateProperty =  በዓለ_ንግሥ | ontologyProperty = coronationDate }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ | ontologyProperty = successor }}
+                {{ PropertyMapping | templateProperty =  ርዕስ2 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ግዛት2 | ontologyProperty = realm }}
+                {{ PropertyMapping | templateProperty =  በዓለ_ንግሥ2 | ontologyProperty = coronationDate }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ2 | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ2 | ontologyProperty = successor }}
+                {{ PropertyMapping | templateProperty =  ባለቤት | ontologyProperty = spouse }}
+                {{ PropertyMapping | templateProperty =  ልጆች | ontologyProperty = child }}
+                {{ PropertyMapping | templateProperty =  ሙሉ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ሥርወ-መንግሥት | ontologyProperty = dynasty }}
+                {{ PropertyMapping | templateProperty =  አባት | ontologyProperty = father }}
+                {{ PropertyMapping | templateProperty =  እናት | ontologyProperty = mother }}
+                {{ PropertyMapping | templateProperty =  የተወለዱት | ontologyProperty = birthDate }}
+                {{ PropertyMapping | templateProperty =  የሞቱት | ontologyProperty = deathDate }}
+                {{ PropertyMapping | templateProperty =  የተቀበሩት | ontologyProperty = deathPlace }}
+                {{ PropertyMapping | templateProperty =  ፊርማ | ontologyProperty = signature }}
+                {{ PropertyMapping | templateProperty =  ሀይማኖት | ontologyProperty = religion }}
+				{{ PropertyMapping | templateProperty =  ጦርነቶች | ontologyProperty = battle }}
+}}</text></revision></page><page><title>Mapping am:የእግር ኳስ ቡድን መረጃ</title><ns>390</ns><id>14457</id><revision><id>59754</id><timestamp>2024-07-28T23:34:16Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = SoccerClub
+                 | mappings =
+            
+                {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ሥዕል | ontologyProperty = image }}
+                {{ PropertyMapping | templateProperty =  ሙሉ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ቅጽል_ስም | ontologyProperty = foaf:nick }}
+                {{ PropertyMapping | templateProperty =  ምሥረታ | ontologyProperty = foundingDate }}
+                {{ PropertyMapping | templateProperty =  ስታዲየም | ontologyProperty = stadium }}
+                {{ PropertyMapping | templateProperty =  የመሪዎች_ማዕረግ | ontologyProperty = leaderTitle }}
+                {{ PropertyMapping | templateProperty =  የመሪዎች_ስም | ontologyProperty = leaderName }}
+                {{ PropertyMapping | templateProperty =  ሊግ | ontologyProperty = league }}
+				{{ PropertyMapping | templateProperty =  አርማ | ontologyProperty = logo }}
+                {{ PropertyMapping | templateProperty =  ድረ_ገጽ | ontologyProperty = foaf:homepage }}
+
+&lt;!-- Properties not mapped yet 
+                {{ PropertyMapping | templateProperty =  የኋላ_ቀለም | ontologyProperty = ####### }}
+                {{ PropertyMapping | templateProperty =  የፅሁፍ_ቀለም | ontologyProperty = ####### }}
+-->
+}}</text></revision></page><page><title>Mapping am:የዘፈኖች ዝርዝር</title><ns>390</ns><id>14460</id><revision><id>59764</id><timestamp>2024-08-05T06:58:48Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = TrackList
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ርዕስ | ontologyProperty = foaf:name }}
+
+        {{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት1 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም1 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ1 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት1 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት1 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ1 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት2 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ2 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት2 | ontologyProperty =  artist}}
+                {{ PropertyMapping | templateProperty =  ግጥም2 | ontologyProperty = lyrics}}
+                {{ PropertyMapping | templateProperty =  ዜማ2 | ontologyProperty = composer}}
+                {{ PropertyMapping | templateProperty =  ርዝመት2 | ontologyProperty = runtime | unit = minute }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት3 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም3 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ3 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት3 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት3 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ3 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት4 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ4 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት4 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም4 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ4 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት4 | ontologyProperty = runtime | unit = minute }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት5 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም5 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ5 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት5 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት5 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ5 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት6 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ6 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት6 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም6 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ6 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት6 | ontologyProperty = runtime | unit = minute  }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት7 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም7 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ7 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት7 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት7 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ7 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት8 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ8 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት8 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም8 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ8 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት8 | ontologyProperty = runtime | unit = minute }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት9 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም9 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ9 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት9 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት9 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ9 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት10 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ10 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት10 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም10 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ10 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት10 | ontologyProperty = runtime | unit = minute  }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት11 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም11 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ11 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት11 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት11 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ11 | ontologyProperty = comment }}
+        }}
+
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት12 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ12 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት12 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም12 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ12 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት12 | ontologyProperty = runtime | unit = minute }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት13 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም13 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ13 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት13 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት13 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ13 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት14 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ14 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት14 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም14 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ14 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት14 | ontologyProperty = runtime | unit = minute }}
+        }}
+
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርቲስት15 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም15 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ15 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት15 | ontologyProperty = runtime | unit = minute }}
+                {{ PropertyMapping | templateProperty =  አርዕስት15 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ15 | ontologyProperty = comment }}
+        }}
+{{IntermediateNodeMapping
+        | nodeClass = Song
+        | correspondingProperty = division
+        | mappings =
+                {{ PropertyMapping | templateProperty =  አርዕስት16 | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ተጨማሪ16 | ontologyProperty = comment }}
+                {{ PropertyMapping | templateProperty =  አርቲስት16 | ontologyProperty = artist }}
+                {{ PropertyMapping | templateProperty =  ግጥም16 | ontologyProperty = lyrics }}
+                {{ PropertyMapping | templateProperty =  ዜማ16 | ontologyProperty = composer }}
+                {{ PropertyMapping | templateProperty =  ርዝመት16 | ontologyProperty = runtime | unit = minute }}
+        }}
+
+                {{ PropertyMapping | templateProperty =  ጠቅላላ_ርዝመት | ontologyProperty = runtime | unit = minute }}
+                
+}}</text></revision></page><page><title>Mapping am:የፊልም መረጃ</title><ns>390</ns><id>14441</id><revision><id>59696</id><timestamp>2024-06-21T16:36:16Z</timestamp><text>{{TemplateMapping
+| mapToClass = Film
+| mappings =
+  {{PropertyMapping | templateProperty =  ርዕስ | ontologyProperty = foaf:name}}
+  {{PropertyMapping | templateProperty =  ርዕስ_በሌላ_ቋንቋ | ontologyProperty = foaf:name}}
+  {{PropertyMapping | templateProperty =  የተለቀቀበት_ቀን | ontologyProperty = releaseDate}}
+  {{PropertyMapping | templateProperty =  ፊልሙን_ያዘጋጀው_ድርጅት | ontologyProperty = productionCompany}}
+  {{PropertyMapping | templateProperty =  ዳይሬክተር | ontologyProperty = director}}
+  {{PropertyMapping | templateProperty =  አዘጋጅ | ontologyProperty = producer}}
+  {{PropertyMapping | templateProperty =  ምክትል_ዳይሬክተር | ontologyProperty = deputyDirector}}
+  {{PropertyMapping | templateProperty =  ጸሐፊ | ontologyProperty = writer}}
+  {{PropertyMapping | templateProperty =  ሙዚቃ | ontologyProperty = musicComposer}}
+  {{PropertyMapping | templateProperty =  ኤዲተር | ontologyProperty = editing}}
+  {{PropertyMapping | templateProperty =  ዘውግ | ontologyProperty = genre}}
+  {{PropertyMapping | templateProperty =  ተዋናዮች | ontologyProperty = starring}}
+  {{PropertyMapping | templateProperty =  የፊልሙ_ርዝመት | ontologyProperty = runtime | unit = Time}}
+  {{PropertyMapping | templateProperty =  ሀገር | ontologyProperty = country}}
+  {{PropertyMapping | templateProperty =  ወጭ | ontologyProperty = budget| unit = Currency}}
+  {{PropertyMapping | templateProperty =  ገቢ | ontologyProperty = revenue | unit = Currency}}
+}}</text></revision></page><page><title>Mapping am:የፖለቲካ ሰው መረጃ</title><ns>390</ns><id>14459</id><revision><id>59758</id><timestamp>2024-08-04T22:39:40Z</timestamp><text>{{ConditionalMapping
+| cases =
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ንጉሥ
+    | mapping = {{TemplateMapping
+                | mapToClass = Royalty
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ዓፄ
+    | mapping = {{TemplateMapping
+                | mapToClass = Royalty
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ምክትል_ፕሬዝዳንት
+    | mapping = {{TemplateMapping
+                | mapToClass = VicePresident
+                }}
+ }}
+ 
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ጠቅላይ_ሚኒስትር
+    | mapping = {{TemplateMapping
+                | mapToClass = PrimeMinister
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = equals
+    | value = ፕሬዝዳንት
+    | mapping = {{TemplateMapping
+                | mapToClass = President
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ሴናተር
+    | mapping = {{TemplateMapping
+                | mapToClass = Senator
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = contains
+    | value = ምክትል
+    | mapping = {{TemplateMapping
+                | mapToClass = Deputy
+                }}
+ }}
+ {{Condition
+    | templateProperty = ማዕረግ
+    | operator = equals
+    | value = ከንቲባ
+    | mapping = {{TemplateMapping
+                | mapToClass = Mayor
+                }}
+ }}
+
+{{Condition
+| operator = otherwise
+| mapping =
+   {{TemplateMapping |mapToClass = Politician }}
+}}
+
+| defaultMappings =
+                {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ስዕል | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =  የስዕል_ስፋት | ontologyProperty = pictureSize }}
+                {{ PropertyMapping | templateProperty =  የስዕል_መግለጫ | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =  ሌላ_ስም | ontologyProperty = foaf:nick }}
+                {{ PropertyMapping | templateProperty =  የተወለዱት | ontologyProperty = birthDate }}
+                {{ PropertyMapping | templateProperty =  የሞቱት | ontologyProperty = deathDate }}
+                {{ PropertyMapping | templateProperty =  የተቀበሩት | ontologyProperty = deathPlace }}
+                {{ PropertyMapping | templateProperty =  ፓርቲ | ontologyProperty = party }}
+                {{ PropertyMapping | templateProperty =  ሙሉ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ዜግነት | ontologyProperty = nationality }}
+                {{ PropertyMapping | templateProperty =  ባለቤት | ontologyProperty = spouse }}
+                {{ PropertyMapping | templateProperty =  ልጆች | ontologyProperty = child }}
+                {{ PropertyMapping | templateProperty =  አባት | ontologyProperty = father }}
+                {{ PropertyMapping | templateProperty =  እናት | ontologyProperty = mother }}
+                {{ PropertyMapping | templateProperty =  ትምህርት | ontologyProperty = education }}
+                {{ PropertyMapping | templateProperty =  ሙያ | ontologyProperty = profession }}
+                {{ PropertyMapping | templateProperty =  ሀይማኖት | ontologyProperty = religion }}
+                {{ PropertyMapping | templateProperty =  ፊርማ | ontologyProperty = signature }}
+                {{ PropertyMapping | templateProperty =  ኃይል | ontologyProperty = militaryUnit }}
+                {{ PropertyMapping | templateProperty =  የአገልግሎት_ጊዜ | ontologyProperty = termOfOffice }}
+                {{ PropertyMapping | templateProperty =  ማዕረግ | ontologyProperty = title }}
+                {{ PropertyMapping | templateProperty =  ጦርነቶች | ontologyProperty = battle }}
+
+    {{IntermediateNodeMapping
+        | nodeClass = PersonFunction
+        | correspondingProperty = occupation
+        | mappings =
+                {{ PropertyMapping | templateProperty =  ቢሮ | ontologyProperty = office }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት | ontologyProperty = president }}
+                {{ PropertyMapping | templateProperty =  ጠቅላይ_ሚኒስትር | ontologyProperty = primeMinister }}
+                {{ PropertyMapping | templateProperty =  ምክትል_ፕሬዝዳንት | ontologyProperty = vicePresident }}
+                {{ PropertyMapping | templateProperty =  ምክትል | ontologyProperty = deputy }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ | ontologyProperty = successor }}
+    }}
+    {{IntermediateNodeMapping
+        | nodeClass = PersonFunction
+        | correspondingProperty = occupation
+        | mappings =
+                {{ PropertyMapping | templateProperty =  ቢሮ2 | ontologyProperty = office }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት2 | ontologyProperty = president }}
+                {{ PropertyMapping | templateProperty =  ጠቅላይ_ሚኒስትር2 | ontologyProperty = primeMinister }}
+                {{ PropertyMapping | templateProperty =  ምክትል_ፕሬዝዳንት2 | ontologyProperty = vicePresident }}
+                {{ PropertyMapping | templateProperty =  ምክትል2 | ontologyProperty = deputy }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ2 | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ2 | ontologyProperty = successor }}
+     }}
+    {{IntermediateNodeMapping
+        | nodeClass = PersonFunction
+        | correspondingProperty = occupation
+        | mappings =
+                {{ PropertyMapping | templateProperty =  ቢሮ3 | ontologyProperty = office }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት3 | ontologyProperty = president }}
+                {{ PropertyMapping | templateProperty =  ጠቅላይ_ሚኒስትር3 | ontologyProperty = primeMinister }}
+                {{ PropertyMapping | templateProperty =  ምክትል_ፕሬዝዳንት3 | ontologyProperty = vicePresident }}
+                {{ PropertyMapping | templateProperty =  ምክትል3 | ontologyProperty = deputy }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ3 | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ3 | ontologyProperty = successor }}
+    }}
+    {{IntermediateNodeMapping
+        | nodeClass = PersonFunction
+        | correspondingProperty = occupation
+        | mappings =
+                {{ PropertyMapping | templateProperty =  ቢሮ4 | ontologyProperty = office }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት4 | ontologyProperty = president }}
+                {{ PropertyMapping | templateProperty =  ጠቅላይ_ሚኒስትር4 | ontologyProperty = primeMinister }}
+                {{ PropertyMapping | templateProperty =  ምክትል_ፕሬዝዳንት4 | ontologyProperty = vicePresident }}
+                {{ PropertyMapping | templateProperty =  ምክትል4 | ontologyProperty = deputy }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ4 | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ4 | ontologyProperty = successor }}
+    }}
+    {{IntermediateNodeMapping
+        | nodeClass = PersonFunction
+        | correspondingProperty = occupation
+        | mappings =
+                {{ PropertyMapping | templateProperty =  ቢሮ5 | ontologyProperty = office }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት5 | ontologyProperty = president }}
+                {{ PropertyMapping | templateProperty =  ጠቅላይ_ሚኒስትር5 | ontologyProperty = primeMinister }}
+                {{ PropertyMapping | templateProperty =  ምክትል_ፕሬዝዳንት5 | ontologyProperty = vicePresident }}
+                {{ PropertyMapping | templateProperty =  ምክትል5 | ontologyProperty = deputy }}
+                {{ PropertyMapping | templateProperty =  ቀዳሚ5 | ontologyProperty = predecessor }}
+                {{ PropertyMapping | templateProperty =  ተከታይ5 | ontologyProperty = successor }}
+    }}
+                
+}}</text></revision></page><page><title>Mapping am:ድርጅት መረጃ</title><ns>390</ns><id>14464</id><revision><id>59781</id><timestamp>2024-08-23T03:24:08Z</timestamp><text>{{TemplateMapping
+                 | mapToClass = Company
+                 | mappings =
+                {{ PropertyMapping | templateProperty =  ስም | ontologyProperty = foaf:nick }}
+                {{ PropertyMapping | templateProperty =  ሙሉ_ስም | ontologyProperty = foaf:name }}
+                {{ PropertyMapping | templateProperty =  ምስል | ontologyProperty = picture }}
+                {{ PropertyMapping | templateProperty =  ምስል_ስፋት | ontologyProperty = pictureSize }}
+                {{ PropertyMapping | templateProperty =  ምስል_መግለጫ | ontologyProperty = pictureDescription }}
+                {{ PropertyMapping | templateProperty =  አርማ | ontologyProperty =  foaf:logo }}
+                {{ PropertyMapping | templateProperty =  ድረገጽ | ontologyProperty = foaf:homepage }}
+               
+                {{ PropertyMapping | templateProperty =  ሀገር | ontologyProperty = country }}
+                {{ PropertyMapping | templateProperty =  ፕሬዝዳንት | ontologyProperty = ceo }}
+          
+                {{ PropertyMapping | templateProperty =  ኢንዱስትሪ | ontologyProperty = industry }}
+                {{ PropertyMapping | templateProperty =  የምስረታ_ቦታ | ontologyProperty = foundationPlace }}
+                {{ PropertyMapping | templateProperty =  ዋና_መሥሪያ_ቤት | ontologyProperty = headquarter }}
+                {{ PropertyMapping | templateProperty =  መስራቾች | ontologyProperty = foundedBy }}
+                {{ PropertyMapping | templateProperty =  ቁልፍ_ሰዎች | ontologyProperty = keyPerson }}
+                {{ PropertyMapping | templateProperty =  ምርቶች | ontologyProperty = product }}
+                {{ PropertyMapping | templateProperty =  አገልግሎቶች | ontologyProperty = service }}
+                {{ PropertyMapping | templateProperty =  ገቢ | ontologyProperty = revenue | unit = Currency }}
+                {{ PropertyMapping | templateProperty =  የአስተዳደር_ማዕረግ | ontologyProperty = leaderTitle }}
+                {{ PropertyMapping | templateProperty =  የአስተዳደር_ስም | ontologyProperty = leaderName }}
+                
+                {{ PropertyMapping | templateProperty =  የሚቀርበው_አካባቢ | ontologyProperty = nearestCity }}
+                {{ PropertyMapping | templateProperty =  የተጣራ_ገቢ | ontologyProperty = netIncome | unit = Currency }}
+                {{ PropertyMapping | templateProperty =  ጠቅላላ_ንብረቶች | ontologyProperty = assets }}
+                {{ PropertyMapping | templateProperty =  ባለቤቶች | ontologyProperty = owner }}
+                {{ PropertyMapping | templateProperty =  የሰራተኞች_ብዛት | ontologyProperty = numberOfEmployees }}}}</text></revision></page></mediawiki>
