@@ -56,8 +56,8 @@
 							<id>stats</id>
 							<mainClass>org.dbpedia.extraction.server.stats.CreateMappingStats</mainClass>
 							<args>
-								<arg>/home/adwa/dumps/am</arg><!-- base dir -->
-								<arg>/home/adwa/extraction-framework/server/src/main/statistics</arg><!-- statistics files dir -->
+								<arg>/home/../dumps/am</arg><!-- base dir -->
+								<arg>/home/../extraction-framework/server/src/main/statistics</arg><!-- statistics files dir -->
 								<arg>.bz2</arg><!-- file suffix: '.gz', '.bz2' or '' -->
 								<arg>true</arg><!-- pretty printing? ugly in log files. -->
 								<arg>am</arg>							
