@@ -86,10 +86,11 @@ object CreateMappingStats
             val templateParameters = inputFile(DBpediaDatasets.TemplateParameters)
             // extracted by org.dbpedia.extraction.mappings.InfoboxExtractor
             val infoboxTest = inputFile(DBpediaDatasets.InfoboxTest)
+            val infoboxProperties = inputFile(DBpediaDatasets.InfoboxProperties)
             
             val builder = new MappingStatsBuilder(statsDir, language, pretty)
     
-            builder.buildStats(redirects, articleTemplates, templateParameters, infoboxTest)
+            builder.buildStats(redirects, articleTemplates, templateParameters, infoboxTest, infoboxProperties)
             
             // load them right back to check that the format is ok
             new MappingStatsManager(statsDir, language)
